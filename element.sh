@@ -1,5 +1,6 @@
 #!/bin/bash
-
+# Script to look up element info from periodic_table database
+# Usage: ./element.sh <atomic_number|symbol|name>
 PSQL="psql --username=freecodecamp --dbname=periodic_table -t --no-align -c"
 
 if [[ -z $1 ]]
